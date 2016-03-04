@@ -1,0 +1,37 @@
+<html>
+<head>
+
+    <script>
+function test(){
+     if(native){
+         native.jsCall(JSON.stringify({
+           type : 'openUrl',
+            url : 'http://www.baidu.com'
+         }));
+         //native.jsCall("http://www.baidu.com")
+     }
+   function show(){
+
+   }
+}
+function show(){
+document.getElementById("div").style.display="";
+}
+function hidden(){
+document.getElementById("div").style.display="none";
+}
+
+
+
+
+    </script>
+</head>
+<body>
+<button onclick="javascript:test()">js call native</button>
+<a href="javascript:test()">call</a>
+
+<div id="div" style="display: none ">
+    show div by call native method!
+</div>
+</body>
+</html>
